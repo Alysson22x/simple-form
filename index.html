@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset class="geral">
+            <div class="start">
+                <label>Nome:</label>
+                <input type="text" name="Nome" id="info" required>
+
+                <label>Sobrenome:</label> 
+                <input type = "text" name="Sobrenome" id="info" required>
+            </div>
+
+            <div> <br>
+                <label>Email:</label>
+                <input type="email" name="Email" id="email" required> 
+            </div>
+
+
+
+            <div class="selection_side"> 
+                <br>
+                <label>Qual seu lado de aplicações?</label>
+
+                <label>
+                <input type="radio" name="name" value="Front-end" checked> Front-end
+                </label>
+
+                <label> 
+                    <input type="radio" name="name" value="Back-End"> Back-End
+                </label>
+
+                <label>
+                    <input type="radio" name="name" value="Full-stack" >Full Stack
+                </label>
+            </div>
+
+            <div>
+                <br>
+                <label id="title_selection">Selecione seu nível:</label> 
+                <select>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+
+            </div>
+            
+        </fieldset>
+
+        <fieldset> <br>
+            <div class="conhecimento_tecnologias">
+                <label id="title_tecnologias">Quais tecnologias você usa?</label>
+                <br> 
+                <input type="checkbox" name="linguagem" id="html">
+                <label for="linguagem1">HTML</label>    
+
+                <input type="checkbox" name="linguagem" id="css">
+                <label for="linguagem2">CSS</label>
+
+                <input type="checkbox" name="linguagem" id="javascript">
+                <label for="linguagem3">JavaScript</label>
+
+                <input type="checkbox" name="linguagem" id="python">
+                <label for="linguagem4">Python</label>
+
+                <input type="checkbox" name="linguagem" id="php">
+                <label for="linguagem5">PHP</label>
+
+                <input type="checkbox" name="linguagem" id="java">
+                <label for="linguagem6">Java</label>
+
+                <input type="checkbox" name="linguagem" id="c#">
+                <label for="linguagem7">C#</label>
+            </div>
+
+        </fieldset>
+
+        <div>
+            <br> <br>
+            <label id="title_textarea">Me conte um pouco sobre você: </label><br><br>
+            <textarea name="" id="textarea" cols="50" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
